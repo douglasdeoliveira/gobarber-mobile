@@ -20,7 +20,6 @@ export default function Profile() {
   const dispatch = useDispatch();
 
   const profile = useSelector(state => state.user.profile);
-  const loading = useSelector(state => state.auth.loading);
 
   const emailRef = useRef();
   const oldPasswordRef = useRef();
@@ -116,12 +115,8 @@ export default function Profile() {
             value={confirmPassword}
             onChangeText={setConfirmPassword}
           />
-          <SubmitButton loading={loading} onPress={handleSubmit}>
-            Atualizar perfil
-          </SubmitButton>
-          <LogoutButton loading={loading} onPress={handleLogout}>
-            Sair do GoBarber
-          </LogoutButton>
+          <SubmitButton onPress={handleSubmit}>Atualizar perfil</SubmitButton>
+          <LogoutButton onPress={handleLogout}>Sair do GoBarber</LogoutButton>
         </Form>
       </Container>
     </Background>
