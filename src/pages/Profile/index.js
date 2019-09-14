@@ -10,6 +10,7 @@ import {
   Container,
   Form,
   FormInput,
+  LogoutButton,
   Separator,
   SubmitButton,
   Title,
@@ -118,6 +119,9 @@ export default function Profile() {
           <SubmitButton loading={loading} onPress={handleSubmit}>
             Atualizar perfil
           </SubmitButton>
+          <LogoutButton loading={loading} onPress={handleLogout}>
+            Sair do GoBarber
+          </LogoutButton>
         </Form>
       </Container>
     </Background>
