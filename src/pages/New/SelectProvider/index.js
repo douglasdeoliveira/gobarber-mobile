@@ -30,7 +30,7 @@ export default function SelectProvider({ navigation }) {
             <Provider
               onPress={() => {
                 navigation.navigate('SelectDateTime', { provider });
-              ;}}>
+              }}>
               <Avatar
                 source={{
                   uri: provider.avatar
@@ -48,7 +48,7 @@ export default function SelectProvider({ navigation }) {
 }
 
 SelectProvider.navigationOptions = ({ navigation }) => ({
-  title: 'Seleciona o prestador',
+  title: 'Selecione o prestador',
   headerLeft: () => (
     <TouchableOpacity
       onPress={() => {
