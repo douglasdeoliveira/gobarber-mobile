@@ -1,4 +1,4 @@
-# GoBarber Web
+# GoBarber Mobile
 
 ## Overview
 
